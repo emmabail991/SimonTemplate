@@ -32,6 +32,7 @@
             this.blueButton = new System.Windows.Forms.Button();
             this.redButton = new System.Windows.Forms.Button();
             this.greenButton = new System.Windows.Forms.Button();
+            this.gameScreenLength = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // yellowButton
@@ -71,11 +72,21 @@
             this.greenButton.UseVisualStyleBackColor = false;
             this.greenButton.Click += new System.EventHandler(this.greenButton_Click);
             // 
+            // gameScreenLength
+            // 
+            this.gameScreenLength.AutoSize = true;
+            this.gameScreenLength.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.gameScreenLength.Location = new System.Drawing.Point(30, 18);
+            this.gameScreenLength.Name = "gameScreenLength";
+            this.gameScreenLength.Size = new System.Drawing.Size(0, 13);
+            this.gameScreenLength.TabIndex = 4;
+            // 
             // GameScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
+            this.Controls.Add(this.gameScreenLength);
             this.Controls.Add(this.yellowButton);
             this.Controls.Add(this.blueButton);
             this.Controls.Add(this.redButton);
@@ -85,6 +96,7 @@
             this.Size = new System.Drawing.Size(301, 300);
             this.Load += new System.EventHandler(this.GameScreen_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -94,5 +106,6 @@
         private System.Windows.Forms.Button blueButton;
         private System.Windows.Forms.Button redButton;
         private System.Windows.Forms.Button greenButton;
+        private System.Windows.Forms.Label gameScreenLength;
     }
 }
