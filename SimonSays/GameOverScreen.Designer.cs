@@ -77,7 +77,7 @@
             this.closeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.closeButton.ForeColor = System.Drawing.Color.White;
             this.closeButton.Location = new System.Drawing.Point(139, 271);
-            this.closeButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.closeButton.Margin = new System.Windows.Forms.Padding(2);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(70, 27);
             this.closeButton.TabIndex = 3;
@@ -97,6 +97,7 @@
             this.menuButton.TabIndex = 5;
             this.menuButton.Text = "Menu";
             this.menuButton.UseVisualStyleBackColor = false;
+            this.menuButton.Click += new System.EventHandler(this.menuButton_Click);
             // 
             // GameOverScreen
             // 
@@ -109,7 +110,7 @@
             this.Controls.Add(this.lengthLabel);
             this.Controls.Add(this.patternLabel);
             this.Controls.Add(this.gameOverLabel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "GameOverScreen";
             this.Size = new System.Drawing.Size(301, 300);
             this.Load += new System.EventHandler(this.GameOverScreen_Load);

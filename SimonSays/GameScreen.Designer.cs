@@ -43,6 +43,7 @@
             this.yellowButton.Size = new System.Drawing.Size(110, 110);
             this.yellowButton.TabIndex = 3;
             this.yellowButton.UseVisualStyleBackColor = false;
+            this.yellowButton.Click += new System.EventHandler(this.yellowButton_Click);
             // 
             // blueButton
             // 
@@ -52,6 +53,7 @@
             this.blueButton.Size = new System.Drawing.Size(110, 110);
             this.blueButton.TabIndex = 2;
             this.blueButton.UseVisualStyleBackColor = false;
+            this.blueButton.Click += new System.EventHandler(this.blueButton_Click);
             // 
             // redButton
             // 
@@ -61,6 +63,7 @@
             this.redButton.Size = new System.Drawing.Size(110, 110);
             this.redButton.TabIndex = 1;
             this.redButton.UseVisualStyleBackColor = false;
+            this.redButton.Click += new System.EventHandler(this.redButton_Click);
             // 
             // greenButton
             // 
